@@ -6,7 +6,7 @@ export class HttpService {
   constructor(private httpClient: HttpClient) {
   }
 
-  async get(url: string, options?: { [name: string]: string }): Promise<any> {
+  async get(url: string, options?: any): Promise<any> {
     try {
       return await this.httpClient.get(url, options);
     } catch (error) {
@@ -15,7 +15,7 @@ export class HttpService {
     }
   }
 
-  async put(url: string, body: any, options?: { [name: string]: string }): Promise<any> {
+  async put(url: string, body: any, options?: any): Promise<any> {
     try {
       return await this.httpClient.put(url, body, options);
     } catch (error) {
@@ -24,7 +24,7 @@ export class HttpService {
     }
   }
 
-  async delete(url: string, options?: { [name: string]: string }): Promise<any> {
+  async delete(url: string, options?: any): Promise<any> {
     try {
       return await this.httpClient.delete(url, options);
     } catch (error) {
