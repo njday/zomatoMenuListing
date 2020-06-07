@@ -7,7 +7,7 @@ import {buildUrl} from './urlBuilder.service';
 export class ZomatoApiService {
   private zomatoBaseUrl: string = 'https://developers.zomato.com/api/v2.1/';
   //Specify Api Key
-  private apiKey: string = 'e2793cb057a72c5d981a21d2e95344dd';
+  private apiKey: string = '';
   constructor(private httpService: HttpService) {
 
   }
